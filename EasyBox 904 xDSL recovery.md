@@ -1,9 +1,8 @@
 # EasyBox 904 xDSL recovery
 
-> ## recover easybox 904 with macos as recovery machine
+## recover easybox 904 with macos as recovery machine
 
 > download vodafone firmware and rename
-
 >   https://www.vodafone.de/media/downloads/files/fullimage_AT904X-04.16.zip
 
 `mv fullimage_AT904X-04.16.bin fullimage.img`
@@ -30,10 +29,9 @@
 >   - release reset button
 >
 >   easybox should load the image
->
-> 
+ 
 
-> ## cleanup
+## cleanup
 
 ```sh
 sudo launchctl unload -F /System/Library/LaunchDaemons/tftp.plist
@@ -43,7 +41,9 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --remove /usr/libexec/tftpd
 sudo rm /private/tftpboot/fullimage.img
 ```
 
-> ## links
+## links
+
 >   https://www.vodafone.de/hilfe/router/easybox-904.html
 >   https://forum.openwrt.org/t/easybox-904-xdsl-openwrt-installation/96822
->
+>   https://blog.toll.dev/tftp-server-on-macos/
+
